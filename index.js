@@ -105,7 +105,7 @@ b1.addEventListener("click", function () {
 	let c = parseInt(pe13.value);
 
 	if (isNaN(a) || isNaN(b) || isNaN(c) || a < 0 || a > 60 || b < 0 || b > 60 || c < 0 || c > 60) {
-		alert("Please enter valid numbers");
+		//alert("Please enter valid numbers");
 		return;
 	}
 
@@ -154,7 +154,7 @@ b2.addEventListener("click", function () {
 	let c = parseInt(pe23.value);
 
 	if (isNaN(a) || isNaN(b) || isNaN(c) || a < 0 || a > 60 || b < 0 || b > 60 || c < 0 || c > 60) {
-		alert("Please enter valid numbers");
+		//alert("Please enter valid numbers");
 		return;
 	}
 
@@ -193,6 +193,13 @@ b2.addEventListener("click", function () {
 	point2.innerHTML = actual_points;
 
 	updateStats();
+});
+
+window.addEventListener("keypress", (event) => {
+	if (event.key === 'Enter' || event.code === 'Enter') {
+		b1.click();
+		b2.click();
+	}
 });
 
 function drawDots(points, color, maxCount, minValue, xScale, yScale) {
