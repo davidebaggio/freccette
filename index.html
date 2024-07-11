@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Freccette</title>
+  </head>
+
+  <body>
+    <h1 id="title">Freccette</h1>
+
+    <div id="inputs">
+      <p class="info">Inserisci i dati della partita</p>
+      <textarea
+        class="info-area"
+        id="name1"
+        placeholder="Giocatore 1"
+      ></textarea>
+      <textarea
+        class="info-area"
+        id="name2"
+        placeholder="Giocatore 2"
+      ></textarea>
+      <textarea
+        class="info-area"
+        id="tot-points"
+        placeholder="Punteggio iniziale"
+      ></textarea>
+      <button class="button-17" id="info-b">Inizia la partita</button>
+    </div>
+
+    <div id="restart">
+      <button class="button-17" id="restart-b">Restart</button>
+    </div>
+
+    <div class="main-div" id="main-div">
+      <div class="player-points sub-div" id="player1">
+        <p class="name" id="game-name1"></p>
+        <p class="points" id="p1"></p>
+        <textarea class="point-entry" id="pe11"></textarea>
+        <textarea class="point-entry" id="pe12"></textarea>
+        <textarea class="point-entry" id="pe13"></textarea>
+        <button class="button-17" id="b1">Salva punteggio</button>
+      </div>
+
+      <div class="overview sub-div">
+        <canvas id="stats">PUNTI</canvas>
+
+        <div id="stats-display">
+          <div class="sd" id="sd1">
+            <p id="sd1-text"></p>
+          </div>
+
+          <div class="sd" id="sd2">
+            <p id="sd2-text"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="player-points sub-div" id="player2">
+        <p class="name" id="game-name2"></p>
+        <p class="points" id="p2"></p>
+        <textarea class="point-entry" id="pe21"></textarea>
+        <textarea class="point-entry" id="pe22"></textarea>
+        <textarea class="point-entry" id="pe23"></textarea>
+        <button class="button-17" id="b2">Salva punteggio</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
